@@ -20,6 +20,8 @@ public class MyFirstServlet extends HttpServlet {
 		System.out.println("MyFirstServlet start");
 		PrintWriter out = resp.getWriter();
 		out.write("Hello World");
+		out.close();
+		System.out.println("MyFirstServlet end");
 	}
 
 }
